@@ -1,0 +1,74 @@
+#root {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 2rem;
+  color: antiquewhite;
+}
+
+label {
+  padding-right: 1em;
+}
+
+h3 a {
+  color: antiquewhite;
+}
+
+a:hover {
+  color: rgb(218, 216, 205); 
+}
+
+.faded {
+  color: rgba(218, 210, 182, 0.826);
+}
+
+.resultsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20em, 1fr));
+  grid-gap: 1rem;
+  margin-top: 1em;
+}
+
+.card {
+  background-color: rgb(87, 76, 62);
+  color: antiquewhite;
+  padding: 1em;
+  border-radius: 10px;  
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  place-items: center;
+}
+
+.card > * {
+  margin-block: 0.3em;
+}
+
+.card img {
+  /* width: 100%; */
+  margin-block: 1em;
+
+  max-height: 300px;
+  border-radius: 5px;
+
+  outline-offset: 2px;
+  outline: 5px double antiquewhite;
+
+  /* clip-path: polygon(0 20px,20px 0,100% 0,100% calc(100% - 20px),calc(100% - 20px) 100%,0 100%); */
+  transition: transform 0.2s;
+  /* box-shadow: 10px 10px 2px 1px rgba(53, 53, 61, 0.5);; */
+}
+
+.card img:hover {
+  transform: scale(1.03) rotate(-1deg);
+}
+
+.iconButton {
+  margin-inline: 5px;
+  color: rgb(199, 150, 45);
+}
+
+.iconButton:hover {
+  /* opacity: 60%; */
+  color: rgb(216, 170, 70);
+  cursor: pointer;
+}
